@@ -1,0 +1,4 @@
+*.pyc
+sim_calculator*
+data/
+.DS_Store

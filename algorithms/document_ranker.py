@@ -46,7 +46,7 @@ class Ranker(object):
         return self.ALPHA
     
     def getB(self):
-        return self.B = b
+        return self.B
 
     def getK(self):
         return self.K

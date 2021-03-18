@@ -34,6 +34,25 @@ class Ranker(object):
 
     def setMu(self, mu):
         self.MU = mu
+        return
+
+    ########
+    # getter methods
+    ########
+    def getAVDL(self):
+        return self.avdl
+
+    def getAlpha(self):
+        return self.ALPHA
+    
+    def getB(self):
+        return self.B = b
+
+    def getK(self):
+        return self.K
+
+    def getMu(self, mu):
+        return self.MU
 
     ########
     # retreival models

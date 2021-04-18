@@ -13,11 +13,13 @@ class Ranker(object):
     ########
     # setter methods
     ########
-    def setAVDL(self):
+    def setAVDL(self, corpus=None):
+        if not corpus:
+            corpus = self.corpus
         total = 0
-        for doc in self.corpus:
+        for doc in corpus:
             total += float(len(doc))
-        avdl = total / len(self.corpus)
+        avdl = total / len(corpus)
         return avdl
 
     def setAlpha(self, alpha):

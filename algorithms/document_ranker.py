@@ -2,8 +2,7 @@ import math
 import nltk
 
 class Ranker(object):
-    def __init__(self, corpus, alpha=1, b=1, k=1, mu=1):
-        self.corpus = corpus
+    def __init__(self, corpus, alpha=1, b=1, k=1, mu=1, *args, **kwargs):        self.corpus = corpus
         self.ALPHA = alpha
         self.B = b
         self.K = k
